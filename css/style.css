@@ -1,0 +1,225 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+
+body {
+	color: #333333;
+	line-height: 1.5em;
+}
+
+header, nav,  #path_arrow, #contents, footer #footer_box {
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_img {
+	width: 480px;
+/*	margin-left: auto;
+	margin-right: auto;*/
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 0;
+	padding-left: 0;	
+	padding-right: 0;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 30px;
+	margin-left: 0;	
+	margin-right: 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+
+
+#main {
+	width: 600px;
+	float: left;
+}
+
+#sub {
+	width: 200px;
+	float: right;
+}
+
+footer {
+	margin-top: 50px;
+	background-image: url(../images/footer.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+footer #pagetop {
+	float: right;
+}
+
+footer address {
+	clear: both;
+}
+
+footer address, footer #copyright {
+	text-align: center;
+}
+
+#main h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	margin-left: 0;	
+	margin-right: 0;
+	padding-top: 20px;	
+	padding-bottom: 20px;
+	padding-left: 0;	
+	padding-right: 0;
+	background-image: url(../images/h1_top.png), url(../images/h1_bottom.png);
+	background-repeat: repeat-x,repeat-x;
+	background-position: left top,left bottom;
+	color: #26b6d5;
+	font-size: 160%;
+}
+
+#fukuyama #nav_concept a, #shop #nav_shop a, #fish #nav_fish a, #contact #nav_contact a, nav ul li a:hover {
+	background-position: 0 -55px;
+}
+/* 基本レイアウト ここまで↑ */
+
+ul {
+	padding-left: 0px;
+}
+
+
+/* トップページ ここから↓ */
+#news ul {
+	list-style-type: none;
+	margin-left: : 0;
+	padding-left: 0;
+}
+
+#news ul li {
+	padding-top: 1em;	
+	padding-bottom: 1em;
+/* 	padding-left: 10em; */
+	padding-right: 0;	
+	border-bottom: 1px solid #1f95ad;
+	text-indent: -10em;
+}
+/* トップページ ここまで↑ */
+
+
+/* 「コンセプト」ページ ここから↓ */
+.concept_box {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.concept_box:last-child {
+	margin-bottom: 0;	
+}
+
+.concept_box strong {
+	font-size: 25px;
+	color: red;
+}
+/* 「コンセプト」ページ ここまで↑ */
+
+
+/* 「店舗案内」ページ ここから↓ */
+table thead {
+	background-color: #26b6d5;	
+}
+
+table tbody tr:nth-child(b) {
+	background-color: #b8e8f2;		
+
+	margin-left: 150px;
+
+}
+
+/* 「店舗案内」ページ ここまで↑ */
+
+
+
+/* 「取扱い観賞魚」ページ ここから↓ */
+.fish_box figure {
+	width: 180px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	margin-left: 0;	
+	margin-right: 25px;
+	float: left;
+}
+
+.fish_box figure:nth-child(3) {
+	margin-right: 0;
+}
+
+/* 「取扱い観賞魚」ページ ここまで↑ */
+
+
+/* 「お問い合わせ」ページ ここから↓ */
+input[text], input[tel]{
+	width: 200px;
+}
+
+
+
+/* 「お問い合わせ」ページ ここまで↑ */
+
+
+#container{
+	margin:0 auto;
+	width:670px;
+}
+
+
+ul.menu {
+
+	text-align: left;
+}
+
+ul.menu li{
+	list-style-type: none;
+	float:left;
+	width:190px;
+	height:48px;
+	
+	position:relative;
+}
+ul.menu li a{
+
+	width:100%;
+	height:100%;
+	line-height:48px;
+	text-indent:30px;
+	font-weight:bold;
+	color:#CFDFB5;
+	text-decoration:none;
+
+}
+
+ul.menu li ul.sub{
+	position:absolute;
+}
+
+
+ul.menu:after {
+	height:0;
+	visibility:hidden;
+	content:".";
+	display:block;
+	clear:both;
+}
+
+.row-hover {
+
+	margin-left: 150px;
+
+}

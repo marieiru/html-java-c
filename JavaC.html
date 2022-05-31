@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<title>Javaとの違い</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/slideshow.js"></script>
+		<script>
+$(function(){
+
+	$("ul.menu li").hover(function(){
+		$("ul:not(:animated)",this).slideDown("fast");
+	},
+	function(){
+		$("ul",this).slideUp("fast");
+	});
+});
+		</script>
+
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+		  <div class="container">
+			<h1 class="logo">JavaとC++の違い</h1>
+		</div>
+		</div>
+	</header>
+
+	<div id="container">
+			<ul class="menu">
+				<li id="nav_C"><a href="JavaC.html">JavaとC++の違い</a></li>
+				<li id="nav_Script"><a href="JavaJavaScript.html">JavaとJavaScriptの違い</a></li>
+				<li id="nav_Python"><a href="JavaPython.html">JavaとPythonの違い</a></li>
+			</ul>
+
+
+	<table id="tablepress-89" class="tablepress tablepress-id-89">
+		<thead><tr class="row-1 odd"><th class="column-1">比較方法</th><th class="column-3">Java</th><th class="column-2">C + +</th></tr></thead>
+		<tbody class="row-hover">
+		  <tr class="row-2 even"><td class="column-1">プラットフォームの独立性</td><td class="column-3">プラットフォームに依存しません。 あるプラットフォームでコンパイルして別のプラットフォームで実行できます</td><td class="column-2">プラットフォームに依存します。 すべてのプラットフォームでコンパイルする必要があります</td></tr>
+		  <tr class="row-3 odd"><td class="column-1">コンパイラーとインタープリター</td><td class="column-3">コンパイルされ、解釈された言語です</td><td class="column-2">コンパイル言語です</td></tr>
+ 		  <tr class="row-4 even"><td class="column-1">ポータビリティ</td><td class="column-3">バイトコード出力はどのシステムでも実行できるため、ポータブルです。</td><td class="column-2">持ち運びできません</td></tr>
+		  <tr class="row-5 odd"><td class="column-1">メモリ管理</td><td class="column-3">メモリ管理はシステム制御です</td><td class="column-2">メモリ管理は手動です</td></tr>
+		  <tr class="row-6 even"><td class="column-1">多重継承</td><td class="column-3">多重継承はサポートしていません。 しかし、インターフェースを介して達成することができます</td><td class="column-2">多重継承をサポートします</td></tr>
+		  <tr class="row-7 odd"><td class="column-1">過負荷</td><td class="column-3">演算子のオーバーロードをサポートしていません</td><td class="column-2">演算子のオーバーロードをサポートします</td></tr>
+		  <tr class="row-8 even"><td class="column-1">仮想キーワード</td><td class="column-3">仮想キーワードは使用しません。 デフォルトでは、すべての非静的メソッドはオーバーライドまたは仮想です</td><td class="column-2">仮想キーワードを使用して機能をオーバーライドします</td></tr>
+		  <tr class="row-9 odd"><td class="column-1">ポインタ</td><td class="column-3">ポインタの概念がありません</td><td class="column-2">ポインタの概念を使用します</td></tr>
+		  <tr class="row-10 even"><td class="column-1">ドキュメントのコメント</td><td class="column-3">ドキュメントコメントのサポートが組み込まれています（/ ** ... * /</td><td class="column-2">ドキュメントコメントはサポートされていません</td></tr>
+		  <tr class="row-11 odd"><td class="column-1">スレッドのサポート</td><td class="column-3">Javaには、クラス「Thread」を使用したスレッドサポートが組み込まれています。</td><td class="column-2">C ++には組み込みのスレッドメカニズムがなく、サードパーティのライブラリを使用します</td></tr>
+		  <tr class="row-12 even"><td class="column-1">値による呼び出しと参照による呼び出し</td><td class="column-3">値による呼び出しのみをサポート</td><td class="column-2">値による呼び出しと参照による呼び出しの両方をサポートします</td></tr>
+		  <tr class="row-13 odd"><td class="column-1">構造と共用体</td><td class="column-3">構造体と共用体をサポートしていません</td><td class="column-2">構造体と共用体の両方をサポート</td></tr>
+		  <tr class="row-14 even"><td class="column-1">符号なし右シフト&gt;&gt;&gt;演算子</td><td class="column-3">符号なし右シフト演算子をサポート</td><td class="column-2">符号なし右シフト演算子をサポートしていません</td></tr>
+		  <tr class="row-15 odd"><td class="column-1">ルート階層</td><td class="column-3">java.lang.Objectである単一のルート階層があります</td><td class="column-2">ルート階層はありません</td></tr>
+		  <tr class="row-16 even"><td class="column-1">入力機構</td><td class="column-3">I / O操作にSystem.inとSystem.outを使用します。</td><td class="column-2">I / O操作にCinとCoutを使用します</td></tr>
+		  <tr class="row-17 odd"><td class="column-1">後藤文</td><td class="column-3">Gotoステートメントをサポートしていません</td><td class="column-2">Gotoステートメントをサポート</td></tr>
+		  <tr class="row-18 even"><td class="column-1">データと関数のスコープ</td><td class="column-3">データと関数はクラス内に存在する必要があります</td><td class="column-2">データと関数はクラスの外に置くことができます</td></tr>
+		  <tr class="row-19 odd"><td class="column-1">オブジェクト管理</td><td class="column-3">自動ガベージコレクションを使用してオブジェクトを管理します</td><td class="column-2">newとdeleteを使用してオブジェクトを管理します</td></tr>
+		  <tr class="row-20 even"><td class="column-1">アプリケーション</td><td class="column-3">Windowsベース、Webベース、エンタープライズ、モバイルアプリケーションなどのアプリケーションプログラミングに使用されます。</td><td class="column-2">システムプログラミングに使用</td></tr>
+		  <tr class="row-21 odd"><td class="column-1">種類</td><td class="column-3">唯一のオブジェクト指向プログラミング言語です</td><td class="column-2">手続き型プログラミング言語とオブジェクト指向プログラミング言語の両方</td></tr>
+		  <tr class="row-22 even"><td class="column-1">Concept</td><td class="column-3">一度書くとどこでも実行</td><td class="column-2">一度書いたらどこでもコンパイル</td></tr>
+		  <tr class="row-23 odd"><td class="column-1">スコープ解決演算子 (::)</td><td class="column-3">スコープ解決演算子をサポートしていません</td><td class="column-2">スコープ解決演算子をサポート</td></tr>
+		  <tr class="row-24 even"><td class="column-1">ライブラリ</td><td class="column-3">高度な機能をサポート</td><td class="column-2">低レベル機能をサポート</td></tr>
+		  <tr class="row-25 odd"><td class="column-1">デストラクタ</td><td class="column-3">デストラクタをサポートしていません</td><td class="column-2">デストラクタをサポート</td></tr>
+		  <tr class="row-26 even"><td class="column-1">実行時エラー処理</td><td class="column-3">JVM は、実行時エラーと例外に責任があります。</td><td class="column-2">プログラマーは実行時エラーと例外を処理する責任があります</td></tr>
+		</tbody>
+	  </table>
+
+	</div>
+
+	  
+</body>
+
+</html>
